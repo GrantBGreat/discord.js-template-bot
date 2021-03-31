@@ -1,5 +1,5 @@
 # discord.js template bot
-This is another template bot for discord.js.
+This is another template bot for discord.js. Quick reminder about [discord.js guide](https://discordjs.guide) and how great of a place it is for documentation.
 
 # Setup
 1) Clone the code.
