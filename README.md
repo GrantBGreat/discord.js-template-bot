@@ -8,7 +8,7 @@ This is another template bot for discord.js. Quick reminder about [discord.js gu
   
     ![image](https://user-images.githubusercontent.com/72450527/111185348-408d9880-8588-11eb-94ca-8f35220b7864.png)
 
-4) Create a file `.env` in the root folder of the bot, and enter `TOKEN=the_bot_token_you_just_copied`.<br>
+4) Create a `.env` file in the root folder of the bot, and enter `TOKEN=the_bot_token_you_just_copied`.<br>
     Example: `TOKEN=NzgwNjM4NTYyNTY3MDYxNTM2.X7yAUA.W6sjNFvgosqDurfdPXG0AZyyRpQ`
 5) Make sure you have [installed node](https://nodejs.org/en/).
 6) Navigate to the folder with the bots code and run `npm i`, this will install the following dependancys:
