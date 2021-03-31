@@ -53,9 +53,9 @@ client.on('message', message => {
     let command = content[0].toLowerCase();
     //console.log(`running command ${command}`)
     let args = content.slice(1);
-    let prefix = ">";
+    let prefix = config.prefix;
 
-    if (command.substring(0,1) != prefix) return;
+    if (command.substring(0,prefix.length) != prefix) return;
 
     // Checks if message contains a command and runs it
     let commandfile = client.commands.get(command.slice(prefix.length));
