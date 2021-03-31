@@ -39,6 +39,7 @@ client.on('ready', () => {
       .catch(console.error);
 });
 
+var cooldown = false;
 client.on('message', message => {
   // General checks:
   if(message.author.bot) return;

@@ -1,5 +1,5 @@
 const Discord = require('discord.js')
-const config = require("./config.json") // load the config so we know what the prefix is
+const config = require("../config.json") // load the config so we know what the prefix is
 
 module.exports.run = async (client, message, args) => {
   prefix = config.prefix // get the prefix from the config file
