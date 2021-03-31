@@ -1,10 +1,12 @@
 const Discord = require('discord.js')
+const config = require("./config.json")
 
 module.exports.run = async (client, message, args) => {
+  prefix = config.prefix
   let helpEmbed = new Discord.MessageEmbed()
       .setColor('#0027b3')
       .setTitle('Help')
-      .setDescription('The prefix for this bot is `>`.')
+      .setDescription(`The prefix for this bot is \`${prefix}\`.`)
       .setTimestamp()
       .setFooter('BrainBot', 'https://i.imgur.com/AkAd7Qo.png')
 
@@ -21,7 +23,7 @@ module.exports.run = async (client, message, args) => {
         },
         { 
           name: '\u200B', 
-          value: 'To get more information about a command, run `help <command name>`.' 
+          value: `To get more information about a command, run \`${prefix}help <command name>\`.` 
         }
 
       )
