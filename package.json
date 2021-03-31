@@ -1,0 +1,34 @@
+{
+  "name": "discord.js-template-bot",
+  "version": "1.0.0",
+  "description": "Template bot for when working with Discord.js",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrantBGreat/discord.js-template-bot.git"
+  },
+  "keywords": [
+    "discord",
+    "JavaSrcipt",
+    "discord.js",
+    "bot"
+  ],
+  "author": "Grant Bourne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GrantBGreat/discord.js-template-bot/issues"
+  },
+  "homepage": "https://github.com/GrantBGreat/discord.js-template-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "fs": "0.0.1-security",
+    "ms": "^2.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
