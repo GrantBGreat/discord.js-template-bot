@@ -8,7 +8,7 @@ module.exports.run = async (client, message, args) => {
       .setTitle('Help')
       .setDescription(`The prefix for this bot is \`${prefix}\`.`)
       .setTimestamp()
-      .setFooter('BrainBot', 'https://i.imgur.com/AkAd7Qo.png')
+      .setFooter('Template Bot', 'https://i.imgur.com/wSTFkRM.png')
 
   console.log(args)
   if (args.length === 0) {
@@ -43,7 +43,7 @@ module.exports.run = async (client, message, args) => {
   return message.channel.send(helpEmbed)
 }
 
-//The command's name
 module.exports.help = {
-  name: "help"
+  name: "help",
+  description: "You know what this command does :/"
 }
