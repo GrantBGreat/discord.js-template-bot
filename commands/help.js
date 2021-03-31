@@ -41,7 +41,6 @@ module.exports.run = async (client, message, args) => {
   return message.channel.send(helpEmbed)
 }
 
-//The command's name
 module.exports.help = {
   name: "help",
   description: "You know what this command does :/"
