@@ -24,10 +24,10 @@ module.exports.help = {
 ```
 The command name is used for how the command is called and both the name and description are used by the `help` command.
 
-### For more information on discord.js, visit the guide [here](https://discordjs.guide/#before-you-begin)
+## For more information on discord.js, visit the guide [here](https://discordjs.guide/#before-you-begin)
 
 # Useful code snippets
-For embeds:
+### For embeds:
 ```javascript
 const exampleEmbed = new Discord.MessageEmbed()
 	.setColor('#0099ff')
@@ -51,7 +51,7 @@ channel.send(exampleEmbed);
 ```
 (from [here](https://discordjs.guide/popular-topics/embeds.html#using-the-richembedmessageembed-constructor))
 
-Using VC:
+### Using VC:
 ```javascript
 if (message.member.voice.channel) {
   const connection = await message.member.voice.channel.join();
