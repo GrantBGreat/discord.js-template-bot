@@ -6,7 +6,7 @@ module.exports.run = async (client, message, args) => {
       .setTitle('Help')
       .setDescription('The prefix for this bot is `>`.')
       .setTimestamp()
-      .setFooter('BrainBot', 'https://i.imgur.com/AkAd7Qo.png')
+      .setFooter('Template Bot', 'https://i.imgur.com/wSTFkRM.png')
 
   console.log(args)
   if (args.length === 0) {
