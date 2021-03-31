@@ -28,3 +28,6 @@ You will notice a config.json file in the root directory, this file stores the m
 `cooldown` -- This is the amount of time you must wait between commands. The time is in milliseconds and the default is 2000 (2 seconds).
 
 # Developing the bot
+Developing using this bot template is quite easy. You dont need to make any changes to the bot.js and it's all ready for you to just start adding command files in the [commands](https://github.com/GrantBGreat/discord.js-template-bot/tree/main/commands) folder. In addition to this, 3 basic example commands, including a help command are provided.
+
+Full instructions on how to edit the commands and create new ones can be found [here](https://github.com/GrantBGreat/discord.js-template-bot/blob/main/commands/README.md).
