@@ -24,7 +24,7 @@ module.exports.help = {
 ```
 The command name is used for how the command is called and both the name and description are used by the `help` command.
 
-### For more information on discord.js, visit the guide [here](https://discordjs.guide/#before-you-begin)
+### For more information on discord.js, visit the guide [here](https://discordjs.guide/#before-you-begin).
 
 # Useful code snippets
 ### For embeds:
