@@ -21,7 +21,7 @@ This is another template bot for discord.js. Quick reminder about [discord.js gu
 7) You can now start the bot by running the `run.bat` file [here](https://github.com/GrantBGreat/discord.js-template-bot/blob/main/run.bat) **OR** running `node .` in the bot's root folder.<br>
     **NOTE:** For bot development, you may want to use nodemon, more information on that can be found in the [developement readme](https://github.com/GrantBGreat/discord.js-template-bot/blob/main/commands/README.md).
 
-# config
+# Config
 You will notice a config.json file in the root directory, this file stores the main config for the bot. You can find each option and what they are below:<br>
 `prefix` -- This is the prefix for the bot as a string.<br>
 `status` -- This is the status the bot appears with, your options for this are `online` (default), `dnd` (do not disturb), `idle`, and `invisible` (shows as offline).<br>
