@@ -13,7 +13,7 @@ module.exports.run = async (client, message, args) => {
 
         // message.channel.send(`result:\n${evaled}`) // <-- to send without an embed
         const evalEmbed = new Discord.MessageEmbed()
-            .setColor('#ba365b')
+            .setColor('#0027b3')
             .setTitle('Evaluation')
             .setDescription(`Input:\n\`\`\`js\n${result}\n\`\`\`\nOutput:\n\`\`\`\n${evaled}\n\`\`\``)
             .setTimestamp()

@@ -4,7 +4,7 @@ module.exports.run = async (client, message, args) => {
     let url = `https://www.google.com/search?q=${args.join("+")}`
 
     const googleEmbed = new Discord.MessageEmbed()
-        .setColor('#ba365b')
+        .setColor('#0027b3')
         .setTitle('Google it.')
         .setURL(url)
         .setImage('https://tenor.com/view/levar-burton-reading-rainbow-google-that-shit-google-gif-15062945')

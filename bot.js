@@ -1,6 +1,7 @@
 require('dotenv').config();
 const Discord = require('discord.js');
 const fs = require("fs");
+const config = require("./config.json")
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
 
@@ -27,7 +28,7 @@ fs.readdir("./commands/", (err, files) => {
 client.on('ready', () => {
     console.info(`\nLogged in as ${client.user.tag}!\n`);
 
-    client.user.setPresence({ activity: { name: 'Graphene Development' }, status: 'online' })
+    client.user.setPresence({ activity: { name: config.statusmessage }, status: config.status })
       .then(console.log)
       .catch(console.error);
 });
@@ -43,7 +44,7 @@ client.on('message', message => {
     let cooldownEmbed = new Discord.MessageEmbed()
       .setColor('#8f0707')
       .setTitle('Cooldown')
-      .setDescription('You are still on 2 second cooldown!\nStop spamming, 🆔!')
+      .setDescription('You are still on cooldown!')
     return message.channel.send(cooldownEmbed)
   } else {
     // bot is not on cooldown, continue
@@ -63,7 +64,7 @@ client.on('message', message => {
       cooldown = true;
       setTimeout(() => {
         cooldown = false
-      }, 2000); //Timeout for 2 seconds
+      }, config.cooldown); // Cooldown for the given amount of ms
     } else {
       console.warn(`Command ${command.slice(prefix.length)} does not exist.`)
     }

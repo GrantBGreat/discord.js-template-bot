@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 
 module.exports.run = async (client, message, args) => {
   let helpEmbed = new Discord.MessageEmbed()
-      .setColor('#ba365b')
+      .setColor('#0027b3')
       .setTitle('Help')
       .setDescription('The prefix for this bot is `>`.')
       .setTimestamp()
