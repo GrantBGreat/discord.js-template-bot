@@ -21,10 +21,10 @@ This is another template bot for discord.js.
 7) You can now start the bot by running `node .` in the bot's root folder.
 
 # config
-You will notice a config.json file in the root directory, this file stores the main config for the bot. You can find each option and what they are below:
-`prefix` -- This is the prefix for the bot as a string.
-`status` -- This is the status the bot appears with, your options for this are `online` (default), `dnd` (do not disturb), `idle`, and `invisible` (shows as offline).
-`statusmessage` -- This is the message that appears in the bot's custom status.
+You will notice a config.json file in the root directory, this file stores the main config for the bot. You can find each option and what they are below:<br>
+`prefix` -- This is the prefix for the bot as a string.<br>
+`status` -- This is the status the bot appears with, your options for this are `online` (default), `dnd` (do not disturb), `idle`, and `invisible` (shows as offline).<br>
+`statusmessage` -- This is the message that appears in the bot's custom status.<br>
 `cooldown` -- This is the amount of time you must wait between commands. The time is in milliseconds and the default is 2000 (2 seconds).
 
 # Developing the bot
