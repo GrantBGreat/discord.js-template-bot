@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 
 module.exports.run = async (client, message, args) => {
+    // create the url by joining the args together with "+"
     let url = `https://www.google.com/search?q=${args.join("+")}`
 
     const googleEmbed = new Discord.MessageEmbed()
@@ -11,10 +12,9 @@ module.exports.run = async (client, message, args) => {
         .setTimestamp()
         .setFooter('Template Bot', 'https://i.imgur.com/wSTFkRM.png');
 
-    return message.channel.send(googleEmbed);
+    return message.channel.send(googleEmbed); // send an embed with the link as the title and a funny gif
 }
 
-//The command's name
 module.exports.help = {
   name: "google",
   description: "google it."

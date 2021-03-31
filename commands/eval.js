@@ -1,17 +1,18 @@
 const Discord = require('discord.js')
 
 module.exports.run = async (client, message, args) => {
-    if(message.author.id != "411883159408476160" && message.author.id != "212952336065232896" && message.author.id != "171083353502646272") {
+    if(!message.member.hasPermission("ADMINISTRATOR")) { // check if the member is not administrator
         message.reply("you do not have permission to use this command.")
         return;
     } else {
-    var result = args.join(" ")
-        let evaled = eval(result);
+        // then the member is administrator and we feel safe to evaluate
+        var result = args.join(" ") // join together the array into a string
+        let evaled = eval(result); // use the eval() funtion to evaluate the string
         console.warn(`${message.author.tag} running eval command:`)
         console.log(`Input: ${result}`)
         console.log(`Output: ${evaled}`)
 
-        // message.channel.send(`result:\n${evaled}`) // <-- to send without an embed
+        // return message.channel.send(`result:\n${evaled}`) // <-- to send without an embed
         const evalEmbed = new Discord.MessageEmbed()
             .setColor('#0027b3')
             .setTitle('Evaluation')
@@ -23,8 +24,7 @@ module.exports.run = async (client, message, args) => {
     }
 }
 
-//name this whatever the command name is.
 module.exports.help = {
   name: "eval",
-  description: "Admin only command"
+  description: "Admin only command to evaluate JavaScript code."
 }
