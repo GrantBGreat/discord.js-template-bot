@@ -4,7 +4,8 @@
   "description": "Template bot for when working with Discord.js",
   "main": "bot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bot.js",
+    "dev": "nodemon bot.js"
   },
   "repository": {
     "type": "git",
