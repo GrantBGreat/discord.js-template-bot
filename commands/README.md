@@ -54,7 +54,9 @@ channel.send(exampleEmbed);
 ### Using VC:
 ```javascript
 if (message.member.voice.channel) {
-  const connection = await message.member.voice.channel.join();
+	const connection = await message.member.voice.channel.join();
+} else {
+	return; // the member is not in a vc
 }
 
 const dispatcher = connection.play('audio.mp3');
