@@ -27,7 +27,7 @@ The command name is used for how the command is called and both the name and des
 ### For more information on discord.js, visit the guide [here](https://discordjs.guide/#before-you-begin).
 
 # Useful code snippets
-### For embeds:
+### For embeds
 ```javascript
 const exampleEmbed = new Discord.MessageEmbed()
 	.setColor('#0099ff')
@@ -51,7 +51,7 @@ channel.send(exampleEmbed);
 ```
 (from [here](https://discordjs.guide/popular-topics/embeds.html#using-the-richembedmessageembed-constructor))
 
-### Using VC:
+### Using VC
 ```javascript
 if (message.member.voice.channel) {
 	const connection = await message.member.voice.channel.join();
@@ -70,3 +70,28 @@ dispatcher.on('finish', () => {
 });
 ```
 (from [here](https://discordjs.guide/voice/the-basics.html#joining-voice-channels))
+
+# Common Objects & Lines
+### Lines
+To send a message in the channel the message came from:
+```js
+message.channel.send("This is a message.");
+```
+To reply to a message:
+```js
+message.reply("this is a reply.")
+```
+To delete the reciving message:
+```js
+message.delete();
+```
+
+### Objects
+The message's author:
+```js
+message.author
+```
+The bot's user object:
+```js
+client.user
+```
