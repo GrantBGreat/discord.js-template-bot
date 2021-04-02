@@ -8,7 +8,7 @@ module.exports.run = async (client, message, args) => {
       .setTitle('Help')
       .setDescription(`The prefix for this bot is \`${prefix}\`.`)
       .setTimestamp()
-      .setFooter('Template Bot', 'https://i.imgur.com/wSTFkRM.png')
+      .setFooter(client.user.username, 'https://i.imgur.com/wSTFkRM.png')
 
   if (args.length === 0) { // if there are no arguments...
     helpEmbed.addFields(

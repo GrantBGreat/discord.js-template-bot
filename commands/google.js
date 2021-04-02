@@ -10,7 +10,7 @@ module.exports.run = async (client, message, args) => {
         .setURL(url)
         .setImage('https://tenor.com/view/levar-burton-reading-rainbow-google-that-shit-google-gif-15062945')
         .setTimestamp()
-        .setFooter('Template Bot', 'https://i.imgur.com/wSTFkRM.png');
+        .setFooter(client.user.username, 'https://i.imgur.com/wSTFkRM.png');
 
     return message.channel.send(googleEmbed); // send an embed with the link as the title and a funny gif
 }

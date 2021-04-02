@@ -18,7 +18,7 @@ module.exports.run = async (client, message, args) => {
             .setTitle('Evaluation')
             .setDescription(`Input:\n\`\`\`js\n${result}\n\`\`\`\nOutput:\n\`\`\`\n${evaled}\n\`\`\``)
             .setTimestamp()
-            .setFooter('Evaluated by Template Bot', 'https://i.imgur.com/wSTFkRM.png');
+            .setFooter(`Evaluated by ${client.user.username}`, 'https://i.imgur.com/wSTFkRM.png');
 
         return message.channel.send(evalEmbed);
     }
