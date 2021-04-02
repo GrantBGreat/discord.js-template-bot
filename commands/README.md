@@ -56,7 +56,7 @@ channel.send(exampleEmbed);
 if (message.member.voice.channel) {
 	const connection = await message.member.voice.channel.join();
 } else {
-	return; // the member is not in a vc
+	return message.reply("please first join a voice channel.");
 }
 
 const dispatcher = connection.play('audio.mp3');
