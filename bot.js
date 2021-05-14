@@ -9,9 +9,6 @@ const client = new Discord.Client();
 // create a collection of commands
 client.commands = new Discord.Collection();
 
-// get the token from the .env file you created.
-const TOKEN = process.env.TOKEN;
-
 try {
   if (!fs.existsSync('./.env')) {
     // .env file does not exist
@@ -23,6 +20,15 @@ try {
   }
 } catch(err) {
   console.error(err)
+}
+
+// get the token from the .env file
+const TOKEN = process.env.TOKEN;
+
+// check if the token has not been set
+if (TOKEN === 'your_token_here') {
+  console.log('Please replace \'your_token_here\' with an appropriate token.');
+  return process.exit(22);
 }
 
 fs.readdir("./commands/", (err, files) => {
