@@ -12,11 +12,11 @@ client.commands = new Discord.Collection();
 try {
   if (!fs.existsSync('./.env')) {
     // .env file does not exist
-    fs.appendFile('.env', 'TOKEN=your_token_here', function (err) {
+    fs.appendFileSync('.env', 'TOKEN=your_token_here', function (err) {
       if (err) throw err;
-      console.log('Your .env file has been created. Please replace \'your_token_here\' with an appropriate token.');
-      return process.exit(22);
     });
+    console.log('Your .env file has been created. Please replace \'your_token_here\' with an appropriate token.');
+    return process.exit(22);
   }
 } catch(err) {
   console.error(err)
@@ -26,7 +26,7 @@ try {
 const TOKEN = process.env.TOKEN;
 
 // check if the token has not been set
-if (TOKEN === 'your_token_here') {
+if (TOKEN == 'your_token_here') {
   console.log('Please replace \'your_token_here\' with an appropriate token.');
   return process.exit(22);
 }
