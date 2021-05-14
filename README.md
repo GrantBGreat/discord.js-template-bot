@@ -5,7 +5,7 @@ This is another template bot for discord.js. Quick reminder about [discord.js gu
 1) Clone or fork the code so you can work on it.
 2) Create a new discord application in the [developer portal](https://discord.com/developers/applications) and create a bot.
 3) Make sure you have [installed node](https://nodejs.org/en/).
-4) Navigate to the folder with the bots code and run `npm i`, this will install the following dependancies:
+4) Navigate to the folder with the bots code and run `npm i`, this will install the following dependencies:
     ```
     discord.js
     dotenv
