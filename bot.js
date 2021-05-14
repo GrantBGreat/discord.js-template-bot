@@ -10,8 +10,10 @@ const client = new Discord.Client();
 client.commands = new Discord.Collection();
 
 try {
+  // check if the .env file exists in the root dir
   if (!fs.existsSync('./.env')) {
     // .env file does not exist
+    // create a .env file and write to it, then tell the user and exit the program
     fs.appendFileSync('.env', 'TOKEN=your_token_here', function (err) {
       if (err) throw err;
     });
