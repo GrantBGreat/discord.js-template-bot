@@ -9,8 +9,29 @@ const client = new Discord.Client();
 // create a collection of commands
 client.commands = new Discord.Collection();
 
-// get the token from the .env file you created.
+try {
+  // check if the .env file exists in the root dir
+  if (!fs.existsSync('./.env')) {
+    // .env file does not exist
+    // create a .env file and write to it, then tell the user and exit the program
+    fs.appendFileSync('.env', 'TOKEN=your_token_here', function (err) {
+      if (err) throw err;
+    });
+    console.log('Your .env file has been created. Please replace \'your_token_here\' with an appropriate token.');
+    return process.exit(22);
+  }
+} catch(err) {
+  console.error(err)
+}
+
+// get the token from the .env file
 const TOKEN = process.env.TOKEN;
+
+// check if the token has not been set
+if (TOKEN == 'your_token_here') {
+  console.log('Please replace \'your_token_here\' with an appropriate token.');
+  return process.exit(22);
+}
 
 fs.readdir("./commands/", (err, files) => {
     // this sorts through the files in the commands folder and creates a list of .js files
