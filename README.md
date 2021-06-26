@@ -13,7 +13,7 @@ This is another template bot for discord.js. Quick reminder about [discord.js gu
     ms
     nodemon
     ```
-5) You can now start the bot by running the `run.bat` file [here](https://github.com/GrantBGreat/discord.js-template-bot/blob/main/run.bat) **OR** running `node .` in the bot's root folder.<br>
+5) You can now start the bot by running the [`run.bat`](https://github.com/GrantBGreat/discord.js-template-bot/blob/main/run.bat) file (linux users can use the [`run.sh`](https://github.com/GrantBGreat/discord.js-template-bot/blob/main/run.sh) file) **OR** running `node .` in the bot's root folder.<br>
     **NOTE:** For bot development, you may want to use nodemon, more information on that can be found in the [developement readme](https://github.com/GrantBGreat/discord.js-template-bot/blob/main/commands/README.md).
 6) Copy the discord token given for the bot:
   
