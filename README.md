@@ -2,7 +2,7 @@
 This is another template bot for discord.js. Quick reminder about [discord.js guide](https://discordjs.guide) and how great of a place it is for documentation.
 
 # Setup
-1) Clone or fork the code so you can work on it.
+1) Click `Use this template` and clone the code from your Github to work on it.
 2) Create a new discord application in the [developer portal](https://discord.com/developers/applications) and create a bot.
 3) Make sure you have [installed node](https://nodejs.org/en/).
 4) Navigate to the folder with the bots code and run `npm i`, this will install the following dependencies:
