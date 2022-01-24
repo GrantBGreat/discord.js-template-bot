@@ -1,7 +1,7 @@
 {
   "name": "discord.js-template-bot",
   "version": "1.0.0",
-  "description": "Template bot for when working with Discord.js",
+  "description": "Template bot for making basic discord.js bots",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
